@@ -14,15 +14,36 @@
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
         android:textSize="24dp"
-        android:text="My Nanodegree Apps!"></TextView>
+        android:text="@string/portfolio_title"></TextView>
 
     <Button style="@style/BasicButton.Default"
-        android:text="Spotify Streamer" />
+        android:id="@+id/app1"
+        android:text="@string/app1_title"
+        android:onClick="onButtonClick" />
 
     <Button style="@style/BasicButton.Default"
-        android:text="Scores App" />
+        android:id="@+id/app2"
+        android:text="@string/app2_title"
+        android:onClick="onButtonClick" />
+
+    <Button style="@style/BasicButton.Default"
+        android:id="@+id/app3"
+        android:text="@string/app3_title"
+        android:onClick="onButtonClick" />
+
+    <Button style="@style/BasicButton.Default"
+        android:id="@+id/app4"
+        android:text="@string/app4_title"
+        android:onClick="onButtonClick" />
+
+    <Button style="@style/BasicButton.Default"
+        android:id="@+id/app5"
+        android:text="@string/app5_title"
+        android:onClick="onButtonClick" />
 
     <Button style="@style/BasicButton.Primary"
-            android:text="Capstone: My Own App"/>
+        android:id="@+id/app6"
+        android:text="@string/app6_title"
+        android:onClick="onButtonClick" />
 
 </LinearLayout>
