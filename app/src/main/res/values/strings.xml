@@ -3,8 +3,7 @@
 
     <string name="portfolio_title">My Nanodegree Apps</string>
 
-    <string name="app1_title">Spotify Streamer</string>
-    <string name="app1_toast">This button will launch my Spotify Streamer app</string>
+    <string name="app1_title">Popular Movies</string>
 
     <string name="app2_title">Scores App</string>
     <string name="app2_toast">This button will launch my Scores App</string>

@@ -1,8 +1,9 @@
 package udacity.pomerantsevp.ru.portfolio;
 
 import android.content.Context;
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Toast;
 
@@ -20,8 +21,8 @@ public class MyAppPortfolio extends ActionBarActivity {
 
         switch (view.getId()) {
             case R.id.app1:
-                textResourceId = R.string.app1_toast;
-                break;
+                launchApp("ru.pomerantsevp.udacity.popularmovies");
+                return;
             case R.id.app2:
                 textResourceId = R.string.app2_toast;
                 break;
@@ -43,6 +44,15 @@ public class MyAppPortfolio extends ActionBarActivity {
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, textResourceId, duration);
         toast.show();
+    }
+
+    private void launchApp(String packageName) {
+        Intent intent = getPackageManager().getLaunchIntentForPackage(packageName);
+        if (intent == null) {
+            return;
+        }
+        intent.addCategory(Intent.CATEGORY_LAUNCHER);
+        startActivity(intent);
     }
 
 }
